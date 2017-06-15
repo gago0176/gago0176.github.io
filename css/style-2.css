@@ -1,0 +1,91 @@
+*{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+	font-weight: 500;
+	background-color: #FFFFFF;
+}
+@keyframes title {
+	0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+
+h1{
+	margin: 25px 0 10px 0;
+	font-size: 3em;
+	line-height: 1.5em;
+	font-family: Georgia;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-align: center;
+	animation: title 8s ease infinite;
+}
+
+.all{
+	margin: auto;
+	max-width: 1000px;
+	
+}
+.col{
+	float: left;
+	width: 33.33333333%;
+	padding: 15px;
+}
+.thumb{
+	padding: 4px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+.thumb img{
+	vertical-align: middle;
+	opacity: 1;
+	transition: opacity 1s linear;
+	transition: max-width 2s linear;
+}
+.thumb:hover img{
+	opacity: 0.5;
+	width: 70%;
+}
+.thumb2 {
+	padding: 4px;
+	transition: all 0.5s ease;
+}
+.thumb2:hover{
+	transform: translate(0, -5px);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+.thumb3{
+	overflow: hidden;
+}
+.thumb3 img{
+	padding: 4px;
+	transition: all 0.5s linear;
+}
+.thumb3:hover img{
+	transform: scale(1.2); 
+	opacity: 0.8;
+}
+@keyframes run {
+	0%   {color:black; transform: translateX(0);}
+	25%   {color:white; transform: translateX(-500px);}
+    50%  {color:white; transform: translateX(500px);}
+    75%   {color:black; transform: translateX(0);}
+    100% {color:black;transform: translate(0);}
+}
+.run h5{
+	float: right;
+}
+.run{
+	animation: run 10s ease infinite;
+	position: relative;
+}
