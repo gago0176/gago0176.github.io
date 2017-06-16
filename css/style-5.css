@@ -1,0 +1,43 @@
+*{
+	box-sizing: border-box;
+}
+
+BODY {
+  background: #082330;
+  background-size: .12em 100%;
+  font: 16em/1 Arial;
+}
+img{
+	max-width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+@keyframes run {
+	0%   {transform: translateY(0);}
+	50%   { transform: translateY(500px);}
+    100%  { transform: translateY(0);}
+}
+@keyframes rum {
+	0%   {transform: translateX(0);}
+	50%   { transform: translateX(500px);}
+    100%  { transform: translateX(0);}
+}
+#main{
+	float:right;
+}
+#all{
+	margin: auto;
+	max-width: 1000px;
+	}
+.rol1{
+	float: right;
+}
+.thumb{
+	animation: run 10s ease infinite;
+	position: relative;
+}
+.thumb2{
+	padding: 30px;
+	animation: rum 10s ease infinite;
+	position: relative;
+}
