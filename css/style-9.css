@@ -1,0 +1,239 @@
+*{
+	box-sizing: border-box;
+}
+.logo img{
+	max-width: 100%;
+	height: 80px;
+}
+a{
+	text-decoration: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif,"Helvetica Neue", Helvetica;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1.428571429;
+	background-color: #FFFFFF;
+	color: #333;
+}
+.warp{
+	max-width: 1150px;
+	margin: auto;
+}
+#header{
+	height: 85px;
+	box-shadow: 1px 0 5px 0 rgba(0,0,0,0.68);
+	position: relative;
+	z-index: 10;
+}
+.logo{
+	float: left;
+}
+.topMenu{
+	width: 812px;
+	float: left;
+}
+.open{
+	float: left;
+	width: 140px;
+	margin: 22px 10px 22px 22px;
+}
+.topMenuS{
+	width: 0;
+	border-right: 1px solid #cbcbcb;
+	border-left: 1px solid #fffefe;
+	float: left;
+	height: 46px;
+	margin-top: 22px;
+}
+.title{
+	font-size: 14px;
+	font-weight: 600;
+	font-style: initial;
+}
+.content{
+	font-size: 18px;
+	font-weight: bold;
+	color: #636363;
+}
+.TabItems{
+	width: 400px;
+	float: left;
+	height: 85px;
+	font-size: 20px;
+	font-family: 'Roboto';
+	font-style: initial;
+	list-style-type: none;
+}
+.TabItems li{
+	display: inline-block;
+	font-size: 20px;
+    line-height: 50px;
+    padding: 0 6px;
+    position: relative;
+}
+.TabItems{
+	position: relative;
+}
+.TabItems a{
+	color: #636363;
+	vertical-align: middle;
+}
+.TabItems a:hover{
+	text-decoration: underline;
+}
+.Icon{
+	width: 40px;
+	float: right;
+	margin-top: 26px;
+}
+.face{
+	width: 50px;
+	height: 50px;
+	margin-left: 0px;
+	margin-top: -6px;
+	float: left;
+	background: rgba(68,68,68,0.8);
+}
+.face img{
+	width: 50px;
+	height: 50px
+}
+.youtube{
+	width: 50px;
+	height: 50px;
+	margin-left: 55px;
+	margin-top: -50px;
+	float: left;
+	background: rgba(68,68,68,0.8);
+}
+.youtube img{
+	width: 50px;
+	height: 50px;
+}
+#headerH{
+	box-shadow: 1px 0 5px 0 rgba(0,0,0,0.68);
+	border-bottom: 1px solid #FFF;
+	max-width: 1200px;
+	margin-top: 15px;
+	z-index: 1;
+}
+.Hher {
+	list-style-type: none;
+	width: 1150px;
+	overflow: hidden;
+	padding-left: 0px;
+}
+.Hher img{
+	width: 1150px;
+	height: 260px;
+	opacity: 1;
+	transition: all 1s linear;
+}
+.Hher:hover img{
+	transform: scale(1.2);
+	opacity: 0.5;
+}.footer{
+	color: #ffffff;
+	background: #f5ca97;
+	font-size: 12px;
+	line-height: 22px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	height: 200px;
+	max-width: 1000px;
+	margin: 15px auto;
+}
+.col3{
+	float: left;
+	width: 33.3333%;
+	margin-bottom: 0;
+	padding: 10px;
+}
+.Lh{
+	padding: 4px;
+	
+	cursor: pointer;
+}
+.lh1{
+	width: 40%;
+	float: left;
+}
+.lh2{
+	width: 40%;
+	float: left;
+}
+.lh3{
+	float: right;
+	margin: -32px 40px;
+}
+.lh4{
+	float: right;
+	margin: -45px 50px;
+}
+.Lh a{
+	color: #ff0037;
+}
+.Lh img{
+
+	width: 30px;
+	height: 30px;
+}.Ht{
+	background-color: #ff0037;
+	position: fixed;
+	right: 10px;
+	bottom: 200px;
+	text-align: center;
+	border-radius: 20%;
+}
+.Ht a{
+	font-size: 18px;
+	color: white;
+
+}
+.down{
+	 	display: none;
+        position: absolute;
+        left: -2px;
+    	top: 36px;
+    	width: 133px;
+        background-color: #eee;
+        padding: 5px 5px;
+        z-index: 11;
+
+}
+.TabItems li{
+	position: relative;
+}
+.TabItems li:hover .down{
+	display: block;
+}
+.main{
+	width: 1000px;
+	height: 1500px;
+	padding: 5px 20px 18px 20px;
+	margin: 15px auto;
+	box-shadow: 2px 0 5px 0 rgba(0,0,0,0.68);
+}h2.Gt{
+	font-family: 'UTM-Aquarelle';
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+h2.Gt a{
+	color: #ff0037;
+	font-size: 36px;
+	font-weight: 400;
+	text-decoration: none;
+}
+.Nd1{
+	text-align: initial;
+}
+.Nd1 h1{
+	text-align: center;
+}
+.img{
+	text-align: center;
+}

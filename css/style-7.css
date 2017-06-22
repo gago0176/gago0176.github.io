@@ -1,0 +1,51 @@
+.one{
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+}
+.two{
+	padding: 4px;
+	cursor: pointer;
+	text-align: center;	
+	position: relative;
+}
+.two img{
+	vertical-align: middle;
+	max-width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	margin-left: 30px;
+}
+.two a{
+	color: #ff0037;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+}
+.middle{
+	transition: .5s ease;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+.text{
+	background: #4CAF50;
+	font-size: 16px;
+	padding: 16px 32px;
+	border-radius: 50%;
+}
+.text a{
+	color: white;
+}
+.two:hover .middle{
+	opacity: 1;
+}
+.two:hover img{
+	opacity: 0.3;
+}
