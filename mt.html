@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>may tinh</title>
+	<meta charset="utf-8">
+	<style>
+		* {
+			padding: 0; 
+			margin: 0;
+		}
+		body {
+			font-family: sans-serif;
+			font-size: 14px;
+			color: #333;
+		}
+		.calculator {
+			width: 300px;
+			height: auto;
+			margin: 20px auto;
+			padding: 10px;
+			border: 1px solid #666;
+			border-radius: 4px;
+		}
+		#box-calculation {
+			width: calc(100% - 16px);
+			background-color: #f7f8f9;
+			border: 1px solid #666; 
+			padding: 5px 7px; font-size: 20px; 
+			border-bottom: none;
+		}
+		#box-result {
+			width: calc(100% - 16px); 
+			background-color: #f9f9f9; 
+			border: 1px solid #666; 
+			padding: 5px 7px; 
+			font-size: 20px; 
+			border-top: none; 
+			text-align: right;
+		}
+		.box-button button {
+			width: 32.4%; 
+			height: 40px; 
+			margin-top: 5px; 
+			font-size: 20px; 
+			color: #fff; 
+			border: none; 
+			cursor: pointer; 
+			border-radius: 4px;}
+		button.number {background-color: #428bca;}
+		button.operation {background-color: #5cb85c;}
+		button.refresh {background-color: #d9534f;}
+		button.del {background-color: #f0ad4e;}
+		button.dot, button.equal {background-color: #5bc0de;}
+	</style>
+</head>
+<body>
+	<div class="calculator">
+		<input type="text" id ="box-calculation" value="">
+		<input type="text" id ="box-result" value="">
+		<div class="box-button">
+			<button class="refresh" onclick="add('c')">CE</button>
+			<button class="del"onclick="document.getElementById('box-calculation').value = document.getElementById('box-calculation').value.substr(0,document.getElementById('box-calculation').value.length-1)">Del</button>
+			<button class="plus operation" onclick="add('+')">+</button>
+			<button class="minus operation" onclick="add('-')">-</button>
+			<button class="times operation" onclick="add('*')">*</button>
+			<button class="divide operation" onclick="add('/')">/</button>
+			<button class="divide operation" onclick="sqrt()">sqrt</button>
+			<button class="divide operation" onclick="pow(2)">^2</button>
+			<button class="divide operation" onclick="gt()">n!</button>
+			<button class="number" onclick="add('9')">9</button>
+			<button class="number" onclick="add('8')">8</button>
+			<button class="number" onclick="add('7')">7</button>
+			<button class="number" onclick="add('6')">6</button>
+			<button class="number" onclick="add('5')">5</button>
+			<button class="number" onclick="add('4')">4</button>
+			<button class="number" onclick="add('3')">3</button>
+			<button class="number" onclick="add('2')">2</button>
+			<button class="number" onclick="add('1')">1</button>
+			<button class="number" onclick="add('0')">0</button>
+			<button class="dot" onclick="add('.')">.</button>
+			<button class="equal"onclick="answer()">=</button>
+		</div>
+	</div> 
+	<script src="js/logic.js" ></script> 
+</body>
+</html>
