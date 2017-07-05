@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	<style>
+		h1{
+			text-align: center;
+			color: #673AB7;
+		} 
+		.one{
+			float: left;
+			width: 600px;
+		}
+		.warp{
+			margin: auto;
+			width: 1000px;
+		}
+		img{
+			 float: left;
+    		width: 350px;
+    		margin-right: 30px;
+		}
+	</style>
+</head>
+<body>
+<div class="warp">
+	<h1>Brand Story</h1>
+	<img src="img/mp.jpg">
+	<div class="one">
+	<p id="p1">
+Liệu pháp chăm sóc da được các bác sỹ da liễu chỉ định:
+Nhãn hiệu IT'S SKIN được phát triển qua việc phân tích và nghiên cứu về các vấn đề trên da của khách hàng và giải quyết các vấn đề này dựa trên các kinh nghiệm liệu pháp chăm sóc đa dạng để có được làn da lý tưởng.</p>
+
+	<p >Với các công thức được kê bởi chính các bác sĩ da liễu từ Đại học Seoul, IT'S SKIN  khẳng định một lần nữa về độ an toàn khi hoàn thành bài kiểm tra da liễu cho dòng trang điểm cũng như dòng chăm sóc da. 
+
+Công thức độc nhất của IT'S SKIN , được tạo thành từ việc tích hợp các thành phần tự nhiên chiết xuất từ thiên nhiên với khoa học nghiên cứu da liễu mới nhất, không chỉ sử dụng các thành phần tự nhiên mà còn tối ưu hóa tác dụng để đánh thức năng lượng tiềm ẩn của làn da.</p>
+	<p >
+Hơn nữa, qua việc sử dụng công thức dựa trên mức độ tinh khiết cao của các thành phần tự nhiên và tối giản hóa sử dụng chất khử trùng, sản phẩm mỹ phẩm hầu như không gây kích ứng da đạt được sự an toàn cho da và ngăn chặn các vấn đề về da. IT'S SKIN , với các thành phần dựa trên độ an toàn cho da của khách hàng, sẽ lấy lại cho bạn năng lượng của làn da khỏe mạnh và mộc mạc.</p></div>
+</div>
+<button onclick="changeFontSize(20)">Thaydoi</button>
+<button onclick="changeColor()">Mau</button>
+<button onclick="Doi1()">doi1</button>
+<button onclick="Doi2()">doi2</button>
+<button onclick="increaseFontSize(2)">Tang</button>
+<button onclick="decreaseFontSize(3)">Giam</button>
+<button onclick="copyContent()">Copy</button>
+<script>
+	function changeFontSize(x){
+		var p =document.getElementsByTagName("p");
+			for(var i=0;i<p.length;i++){
+				p[i].style.fontSize = x + "px";
+			}
+	}
+	function increaseFontSize() {
+  		var p = document.getElementsByTagName('p');
+  		for (var i=0;i<p.length;i++){
+  			var sp = p[i].style.fontSize;
+  			var numL = sp.search("px");
+  			var num = sp.substr(0, numL);
+  			if ( num < 30)
+    			num++;
+  			var spi = num + "px";
+  			p[i].style.fontSize = spi;
+			}
+		}
+	function changeColor(){
+		var p =document.getElementsByTagName("p");
+				p[0].style.color = "green";
+				p[1].style.color = "yellow";
+				p[2].style.color = "red";
+	}
+	function Doi1(){
+		var body = document.getElementsByTagName("body");
+		body[0].style.background="gray";
+	}
+	function Doi2(){
+		var body = document.getElementsByTagName("body");
+		body[0].style.background="#03A9F4";
+	}
+	
+	function decreaseFontSize(){
+		var p = document.getElementsByTagName('p');
+  		for (var i=0;i<p.length;i++){
+  			var sp = p[i].style.fontSize;
+  			var numL = sp.search("px");
+  			var num = sp.substr(0, numL);
+  			if ( num >10 )
+    			num--;
+  			var spi = num + "px";
+  			p[i].style.fontSize = spi;
+			}
+	}
+	function copyContent(){
+		document.getElementById("p1").innerHTML = "Với các công thức được kê bởi chính các bác sĩ da liễu từ Đại học Seoul, IT'S SKIN  khẳng định một lần nữa về độ an toàn khi hoàn thành bài kiểm tra da liễu cho dòng trang điểm cũng như dòng chăm sóc da. Công thức độc nhất của ITS SKIN , được tạo thành từ việc tích hợp các thành phần tự nhiên chiết xuất từ thiên nhiên với khoa học nghiên cứu da liễu mới nhất, không chỉ sử dụng các thành phần tự nhiên mà còn tối ưu hóa tác dụng để đánh thức năng lượng tiềm ẩn của làn da.";
+	}
+</script>
+</body>
+</html>
