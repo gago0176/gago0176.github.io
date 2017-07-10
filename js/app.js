@@ -20,7 +20,7 @@ function populate() {
 function showProgress(){
 	var currentQuestionNumber = quiz.questionIndex + 1 ;
 	var element = document.getElementById("progress");
-	element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
+	element.innerHTML = "Câu hỏi thứ " + currentQuestionNumber + " / " + quiz.questions.length;
 }
 
 function guess(id, guess){
